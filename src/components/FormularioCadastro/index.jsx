@@ -6,9 +6,9 @@ const FormularioCadastro = () => {
     return (<>
         {/* <h1>Formulario Cadastro</h1> */}
 
-        <button type="button" className="btn btn-primary button__add" data-bs-toggle="modal" data-bs-target="#add__modal" data-bs-whatever="@getbootstrap">Adicionar novo usuário</button>
+        <button type="button" className="btn button__add" data-bs-toggle="modal" data-bs-target="#add__modal" data-bs-whatever="@getbootstrap">Adicionar novo usuário</button>
 
-        <div className="modal fade" id="add__modal" tabindex="-1" aria-labelledby="add__modal__label" aria-hidden="true">
+        <div className="modal fade" id="add__modal" tabIndex="-1" aria-labelledby="add__modal__label" aria-hidden="true">
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-header">
@@ -18,15 +18,15 @@ const FormularioCadastro = () => {
                     <div className="modal-body">
                         <form>
                             <div className="mb-3">
-                                <label for="input-name" className="col-form-label">Nome:</label>
+                                <label className="col-form-label">Nome:</label>
                                 <input type="text" className="form-control" id="input-name"/>
                             </div>
                             <div className="mb-3">
-                                <label for="input-email" className="col-form-label">Email:</label>
+                                <label className="col-form-label">Email:</label>
                                 <input type="email" className="form-control" id="input-email"/>
                             </div>
                             <div className="mb-3">
-                                <label for="input-date" className="col-form-label">Data de Nascimento:</label>
+                                <label className="col-form-label">Data de Nascimento:</label>
                                 <input type="date" className="form-control" id="input-date"/>
                             </div>
                         </form>

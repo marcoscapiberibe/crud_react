@@ -8,8 +8,26 @@
 .cadastro__titulo {
     margin-top: 3em;
     color: #ffffff;
+    text-align: center;
+}
+
+.imagem__cadastro {
+    width: 40%;
+    margin-top: 3em;
+
+    -webkit-box-shadow: inset 10px 10px 5px -6px rgba(255, 133, 255, 0.35);
+    -moz-box-shadow: inset 10px 10px 5px -6px rgba(255, 133, 255, 0.35);
+    box-shadow: inset 10px 10px 5px -6px rgba(255, 133, 255, 0.35);
 }
 
 .cadastro__btn__modal {
     padding-top: 3em;
+}
+
+
+
+@media screen and (max-width: 450px)  {
+    .imagem__cadastro {
+        width: 60%;
+    }
 }
