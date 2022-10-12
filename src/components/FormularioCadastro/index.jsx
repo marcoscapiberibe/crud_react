@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from "bootstrap";
+import "../FormularioCadastro/FormularioCadastro.css";
 
 
 const FormularioCadastro = () => {
     return (<>
-        <h1>Formulario Cadastro</h1>
+        {/* <h1>Formulario Cadastro</h1> */}
 
-        <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add__modal" data-bs-whatever="@getbootstrap">Adicionar novo usuário</button>
+        <button type="button" className="btn btn-primary button__add" data-bs-toggle="modal" data-bs-target="#add__modal" data-bs-whatever="@getbootstrap">Adicionar novo usuário</button>
 
         <div className="modal fade" id="add__modal" tabindex="-1" aria-labelledby="add__modal__label" aria-hidden="true">
             <div className="modal-dialog">

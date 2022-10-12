@@ -1,0 +1,15 @@
+.cadastro__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro__titulo {
+    margin-top: 3em;
+    color: #ffffff;
+}
+
+.cadastro__btn__modal {
+    padding-top: 3em;
+}

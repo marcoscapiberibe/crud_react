@@ -4,11 +4,8 @@ import FormularioCadastro from './components/FormularioCadastro';
 
 function App() {
   return (<>
-    <div>
+    <div className='app__conteudo'>
       <Cadastro />
-    </div>
-    <div>
-      <FormularioCadastro />
     </div>
     </>
   );
