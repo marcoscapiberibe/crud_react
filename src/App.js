@@ -1,11 +1,12 @@
 import './App.css';
+import Cadastro from './components/Cadastro';
 
 function App() {
   return (
     <div>
-      <h1>Teste</h1>
+      <Cadastro />
     </div>
   );
-}
+};
 
 export default App;
