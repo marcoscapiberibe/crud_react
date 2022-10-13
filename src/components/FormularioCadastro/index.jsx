@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "../FormularioCadastro/FormularioCadastro.css";
 
 
 const FormularioCadastro = () => {
+
+
+    //Variáveis para capturar os dados
+    const camposIniciaisDeValores = {
+        nomeCompleto: "",
+        email: "",
+        dataNascimento: "",
+    };
+
+    let { values, setValues } = useState(camposIniciaisDeValores);
+
+    const inputChange = e => {
+        let { nomeCompleto, value} = e.target;
+
+        setValues({
+            ...values,
+            [nomeCompleto]: value
+        });
+    };
+
+
+
+
     return (<>
-        {/* <h1>Formulario Cadastro</h1> */}
 
         <button type="button" className="btn button__add" data-bs-toggle="modal" data-bs-target="#add__modal" data-bs-whatever="@getbootstrap">Adicionar novo usuário</button>
 
@@ -17,17 +39,32 @@ const FormularioCadastro = () => {
                     </div>
                     <div className="modal-body">
                         <form>
-                            <div className="mb-3">
-                                <label className="col-form-label">Nome:</label>
-                                <input type="text" className="form-control" id="input-name"/>
+                            <div className="mb-3">                               
+
+                                {/* Verificar depois */}
+
+                                {/* <div className="place__input">
+                                    <div className="form-group input-group col-md-6">
+                                        <div className="input-grou-prepend">
+                                            <div className="input-group-text">
+                                                <i className="fa-solid fa-user"></i>
+                                            </div>
+                                        </div>
+                                    </div> */}
+                                    <label className="col-form-label">Nome:</label>
+                                    <input type="text" className="form-control" id="input-name" placeholder="Nome completo" name="nomeCompleto" value={values.nomeCompleto} onChange={inputChange}></input>
+                                {/* </div> */}
+
                             </div>
                             <div className="mb-3">
+                                {/* <i className="fa-solid fa-envelope"></i> */}
                                 <label className="col-form-label">Email:</label>
-                                <input type="email" className="form-control" id="input-email"/>
+                                <input type="email" className="form-control" id="input-email" placeholder="Email" name="email" value={values.email} onChange={inputChange}/>
                             </div>
                             <div className="mb-3">
-                                <label className="col-form-label">Data de Nascimento:</label>
-                                <input type="date" className="form-control" id="input-date"/>
+                                {/* <i class="fa-solid fa-cake-candles"></i> */}
+                                <label className="col-form-label"> Data de Nascimento:</label>
+                                <input type="date" className="form-control" id="input-date" placeholder="Data de Nascimento" name="dataNascimento" value={values.dataNascimento} onChange={inputChange}/>
                             </div>
                         </form>
                     </div>
