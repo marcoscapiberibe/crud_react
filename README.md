@@ -18,6 +18,7 @@ Este projeto consiste em uma aplicação desenvolvida em React Js, Bootstrap e B
 * Javascript
 * React JS
 * Boostrap
+* Banco de Dados Firebase
 * NPM
 * Vercel
 
