@@ -15,7 +15,7 @@
 
 .cadastro__titulo {
     margin-top: 3em;
-    color: #ffffff;
+    color: rgb(231, 206, 255);
     text-align: center;
 }
 
@@ -68,14 +68,24 @@
 }
 
 
-@media screen and (max-width: 450px)  {
+@media screen and (max-width: 500px)  {
     .imagem__cadastro {
         width: 60%;
     }
 
     .form__list__item {
-        /* display: flex;
-        flex-direction: column; */
         width: 95%;
+    }
+
+    .form__list {
+        font-size: 14px;
+    }
+    
+    .form__list__item {  
+        font-size: 11px;
+    }
+
+    .btn__pencil__erase {
+        width: 90%;
     }
 }

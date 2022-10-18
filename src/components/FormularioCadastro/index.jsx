@@ -45,33 +45,20 @@ const FormularioCadastro = (props) => {
     return (<>
 
         <form autoComplete="off" onSubmit={manipuladorFormEnvio}>
+            <label className="form__label">Nome Completo:</label>
             <div className="form-group input-group">
-                {/* <div className="input-group-prepend">
-                    <div className="input-group-text">
-                        <i className="fas fa-user"></i>
-                    </div>
-                </div> */}
                 <input className="form-control  input__group__resize" placeholder="Nome Completo" name="fullName" value={values.fullName}
                     onChange={manipuladorInputChange} />
             </div>
 
-
+            <label className="form__label">E-mail:</label>
             <div className="form-group input-group">
-                {/* <div className="input-group-prepend">
-                    <div className="input-group-text">
-                        <i className="fas fa-envelope"></i>
-                    </div>
-                </div> */}
                 <input className="form-control  input__group__resize" placeholder="E-mail" name="email" value={values.email} onChange={manipuladorInputChange} />
             </div>
 
+            <label className="form__label">Data de Nascimento:</label>
             <div className="form-group input-group">
-                {/* <div className="input-group-prepend">
-                    <div className="input-group-text">
- 
-                    </div>
-                </div> */}
-                <input type="date" className="form-control  input__group__resize" id="date" placeholder="Data de nascimento" name="birthday" value={values.birthday} onChange={manipuladorInputChange} />
+                <input type="date" className="form-control  input__group__resize" id="input-date" placeholder="Data de nascimento" name="birthday" value={values.birthday} onChange={manipuladorInputChange} />
             </div>
 
             <div className="form-group mt-2">
