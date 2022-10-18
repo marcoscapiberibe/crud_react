@@ -2,6 +2,7 @@
 
 Aplicação responsiva desenvolvida em React Js que apresenta um CRUD com para cadastro de usuários.
 
+![image](https://user-images.githubusercontent.com/96851717/196558460-13c11dcc-ff9b-4d6f-8707-d7a584f1af89.png)
 
 # Sobre o projeto
 
