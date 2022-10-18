@@ -23,10 +23,9 @@ Este projeto consiste em uma aplicação desenvolvida em React Js, Bootstrap e B
 # Autor
 <b>Marcos Capiberibe</b>
 
+Link de acesso: https://crud-react-marcoscapiberibe.vercel.app
+
 Linkedin: www.linkedin.com/in/marcos-capiberibe
 
 email: marcoscapiberibe@hotmail.com
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
