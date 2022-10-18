@@ -1,6 +1,7 @@
 .app__conteudo {
   background: linear-gradient(90deg, rgba(23,13,43,1) 0%, rgb(35, 18, 93) 25%, rgb(56, 32, 134) 44%, rgb(71, 44, 159) 61%, rgb(89, 66, 192) 82%);
-  height: 65em;
+  height: 120em;
+  /* width: 100%; */
 
 }
 

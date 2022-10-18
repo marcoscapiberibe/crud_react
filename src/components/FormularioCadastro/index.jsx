@@ -44,49 +44,41 @@ const FormularioCadastro = (props) => {
 
     return (<>
 
-        <button type="button" className="btn button__add" data-bs-toggle="modal" data-bs-target="#add__modal" data-bs-whatever="@getbootstrap">Adicionar novo usuário</button>
-
         <form autoComplete="off" onSubmit={manipuladorFormEnvio}>
-        <div className="modal fade" id="add__modal" tabIndex="-1" aria-labelledby="add__modal__label" aria-hidden="true">
-            <div className="modal-dialog">
-                <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title" id="add__modal__label">Cadastrar usuário</h5>
-                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="form-group input-group">
+                {/* <div className="input-group-prepend">
+                    <div className="input-group-text">
+                        <i className="fas fa-user"></i>
                     </div>
-                    <div className="modal-body">
-                        
-                        <div>
-                            <div className="mb-3">
-                                <label className="col-form-label">Nome:</label>
-                                <input className="form-control" id="input-name" placeholder="Nome Completo" name="fullName" value={values.fullName}
-                                    onChange={manipuladorInputChange} />
-                            </div>
-                            <div className="mb-3">
-                                <label className="col-form-label">Email:</label>
-                                <input type="email" className="form-control" id="input-email" placeholder="E-mail" name="email" value={values.email} onChange={manipuladorInputChange} />
-                            </div>
-                            <div className="mb-3">
-                                <label className="col-form-label">Data de Nascimento:</label>
-                                <input type="date" className="form-control" id="input-date" placeholder="Data de nascimento" name="birthday" value={values.birthday} onChange={manipuladorInputChange} />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        {/* <button type="button" className="btn btn-primary">Salvar</button> */}
-
-                        <div className="form-group mt-2">
-                            {/* <input type="submit" value={props.idAtual == '' ? "Salvar" : "Atualizar"} className="btn btn-primary btn-block" /> */}
-                            {/* <input type="submit" value="Salvar" className="btn btn-primary btn-block" /> */}
-                            <input type="submit" value={props.idAtual === '' ? "Salvar" : "Atualizar"} className="btn btn-primary btn-block" />
-                        </div>
-
-                    </div>
-                </div>
+                </div> */}
+                <input className="form-control  input__group__resize" placeholder="Nome Completo" name="fullName" value={values.fullName}
+                    onChange={manipuladorInputChange} />
             </div>
-        </div>
+
+
+            <div className="form-group input-group">
+                {/* <div className="input-group-prepend">
+                    <div className="input-group-text">
+                        <i className="fas fa-envelope"></i>
+                    </div>
+                </div> */}
+                <input className="form-control  input__group__resize" placeholder="E-mail" name="email" value={values.email} onChange={manipuladorInputChange} />
+            </div>
+
+            <div className="form-group input-group">
+                {/* <div className="input-group-prepend">
+                    <div className="input-group-text">
+ 
+                    </div>
+                </div> */}
+                <input type="date" className="form-control  input__group__resize" id="date" placeholder="Data de nascimento" name="birthday" value={values.birthday} onChange={manipuladorInputChange} />
+            </div>
+
+            <div className="form-group mt-2">
+                <input type="submit" value={props.idAtual === '' ? "Adicionar novo usuário" : "Atualizar cadastro do usuário"} className="btn btn-block button__add" />
+            </div>
         </form>
+
 
     </>
     );

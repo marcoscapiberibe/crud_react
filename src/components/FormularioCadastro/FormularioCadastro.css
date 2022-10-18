@@ -132,9 +132,20 @@
            inset 0 0 .5em .25em var(--glow-color);
    }
 
+   .input__group__resize {
+    margin-bottom: 1.5em;
+    background-color: rgb(217, 176, 255);
+    color: rgb(100, 61, 136);    
+    border-color: rgb(100, 61, 136);
+   }
+
+   .input__group__resize::placeholder {
+    color: rgb(100, 61, 136);
+   }
 
 
-   @media screen and (max-width: 450px)  {
+
+   /* @media screen and (max-width: 450px)  {
     .button__add {
         font-size: 12px;
     }
@@ -143,4 +154,4 @@
         width: 70%;
 
     }
-   }
+   } */
