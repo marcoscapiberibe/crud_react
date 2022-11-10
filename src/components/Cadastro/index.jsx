@@ -51,7 +51,6 @@ const Cadastro = () => {
         }
     }
 
-
     const onDelete = key => {
         if (window.confirm('Deseja realmente apagar o cadastro?')) {
             fireDb.child(`usuarios/${key}`).remove(  // Apagar cadastro
@@ -62,11 +61,10 @@ const Cadastro = () => {
             )
         }
     }
-
+    
 
     return (<>
         <div className="cadastro__principal">
-
             <div className="cadastro__conteudo">
                 <div className="cadastro__titulo" >
                     <h1>Cadastro de usuário</h1>
@@ -76,9 +74,7 @@ const Cadastro = () => {
                     <FormularioCadastro {...({ addCadastro, idAtual, dadosUsuario })} />
                 </div>
             </div>
-
             <div className="cadastro__principal__conteudo">
-
                 <div className="col-md-10">
                     <table className="table table-sm table-borderless table-stripped">
                         <thead className="thead-light form__list">
@@ -86,10 +82,9 @@ const Cadastro = () => {
                                 <th scope="col"> Nome Completo </th>
                                 <th scope="col"> E-mail </th>
                                 <th scope="col"> Data de Nascimento </th>
-                                <th scope="col"> Ações </th>
+                                <th scope="col"> Editar / Apagar </th>
                             </tr>
                         </thead>
-
                         <tbody className="form__list__item">
                             {
                                 Object.keys(dadosUsuario).map(id => {
@@ -107,20 +102,13 @@ const Cadastro = () => {
                                             </a>
                                         </td>
                                     </tr>
-
                                 })
                             }
                         </tbody>
                     </table>
                 </div>
-
             </div>
-
-
-
         </div>
-
-
     </>
     );
 };

@@ -40,39 +40,27 @@ const FormularioCadastro = (props) => {
     }
 
 
-
-
     return (<>
-
         <form autoComplete="off" onSubmit={manipuladorFormEnvio}>
             <label className="form__label">Nome Completo:</label>
             <div className="form-group input-group">
                 <input className="form-control  input__group__resize" placeholder="Nome Completo" name="fullName" value={values.fullName}
                     onChange={manipuladorInputChange} />
             </div>
-
             <label className="form__label">E-mail:</label>
             <div className="form-group input-group">
                 <input className="form-control  input__group__resize" placeholder="E-mail" name="email" value={values.email} onChange={manipuladorInputChange} />
             </div>
-
             <label className="form__label">Data de Nascimento:</label>
             <div className="form-group input-group">
                 <input type="date" className="form-control  input__group__resize" id="input-date" placeholder="Data de nascimento" name="birthday" value={values.birthday} onChange={manipuladorInputChange} />
             </div>
-
             <div className="form-group mt-2">
                 <input type="submit" value={props.idAtual === '' ? "Adicionar novo usuário" : "Atualizar cadastro do usuário"} className="btn btn-block button__add" />
             </div>
         </form>
-
-
     </>
     );
 };
 
 export default FormularioCadastro;
-
-
-
-
